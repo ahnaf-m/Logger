@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_gradient_bg_for_activites"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.LoginActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_screen_header"
+        style="@style/Header_Text_Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/log_in_screen_welcome" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Subtitle_For_Header_Text_Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_screen_header"
+        android:layout_marginStart="40dp"
+        android:text="@string/log_in_screen_below_welcome" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_email_edittext_layout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:errorTextColor="@color/yellow_orange_gradient_second_color"
+        app:errorEnabled="true"
+        android:hint="@string/log_in_screen_edit_text_email_hint">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_passward_edittext_layout"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_email_edittext_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/log_in_screen_edit_text_passoward_hint"
+        android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_passward_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:imeOptions="normal"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/forgot_passward_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_passward_edittext_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorTransparent"
+        android:fontFamily="@font/kanit_regular"
+        android:text="@string/log_in_screen_forgot_password"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/grey_sub" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        style="@style/main_gradient_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot_passward_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@xml/button_background_for_gradient_button"
+        android:text="@string/log_in_screen_login_button_text" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress_bar_login"
+        style="@style/SpinKitView.Wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/forgot_passward_btn"
+        android:visibility="invisible"
+        android:layout_marginRight="40dp"
+        android:elevation="5dp"
+        app:SpinKit_Color="@color/white" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_with_google_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/login_button"
+        android:backgroundTint="@color/colorTransparent"
+        app:cardElevation="0dp">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/colorTransparent"
+                    android:src="@drawable/google_icon" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/google_sing_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:backgroundTint="@color/colorTransparent"
+                    android:fontFamily="@font/bahnschrift"
+                    android:gravity="center_horizontal"
+                    android:text="@string/log_in_screen_google_sign_in"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/grey_sub" />
+
+            </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_with_google_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signup_text_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in_screen_new_user_base"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/grey_sub" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sign_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/signup_text_base"
+            android:text="@string/log_in_screen_new_user_sign_up_text"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/light_orange" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

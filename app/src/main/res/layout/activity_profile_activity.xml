@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.profile_activity"
+    android:background="@color/menu_bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/profile_icnn"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textColor="@color/bottom_view_header_text"
+        android:layout_below="@+id/profile_icnn"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/kanit_regular"
+        android:id="@+id/emailcontainer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="passowardisnumber@gmail.com"
+        android:textColor="@color/white"
+        android:layout_below="@+id/emailcontainer"
+        android:layout_centerInParent="true"
+        android:id="@+id/emai_real_holder"
+        android:fontFamily="@font/kanit_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID"
+        android:textColor="@color/bottom_view_header_text"
+        android:layout_below="@+id/emai_real_holder"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/kanit_regular"
+        android:id="@+id/user_id_holder"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qwewqeqwe"
+        android:textColor="@color/white"
+        android:layout_below="@+id/user_id_holder"
+        android:layout_centerInParent="true"
+        android:id="@+id/user_id_container"
+        android:fontFamily="@font/kanit_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_margin="30dp"
+    android:id="@+id/log_out_btn"
+    android:layout_alignParentBottom="true"
+    android:fontFamily="@font/kanit_medium"
+    android:textStyle="bold"
+    android:text="LOG OUT"
+    android:textColor="@color/yellow_orange_gradient_second_color"
+    android:background="@drawable/log_out_btn_bg"
+    />
+</RelativeLayout>

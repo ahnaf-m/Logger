@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@xml/dialog_bg_for_layout"
+    android:backgroundTint="@color/lighter_black"
+    android:orientation="vertical"
+    android:weightSum="15"
+    android:layout_gravity="center"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ConcernedPortionofScreen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="4.7"
+        android:orientation="vertical">
+
+        <!-- Parent FrameLayout 'FL' -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:background="@xml/dialog_bg_for_cardview"
+                android:backgroundTint="@color/white" />
+
+            <!-- BL = 50dp -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@xml/dialog_red_circular_for_img">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/white_error_icon" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/RestofScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="@string/dialog_unknown_error_header"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/body_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/segoe_ui"
+                android:text="@string/dialog_unknown_error_body_one"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/light_grey_"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/body_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/body_one"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/segoe_ui"
+                android:text="@string/dialog_unknown_error_body_two"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/light_grey_"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/body_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/body_two"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/segoe_ui"
+                android:text="@string/dialog_unknown_error_body_three"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/light_grey_"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/problem_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="2dp"
+                app:autoSizeTextType="uniform"
+                android:layout_below="@id/body_three"
+                android:fontFamily="@font/kanit_medium"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="@string/dialog_unknown_error_body_dummy_text"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+
+            <Button
+                android:id="@+id/unknown_error_dialog_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/problem_text"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/kanit_medium"
+                android:text="@string/dialog_email_sent_ok_button_text"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                app:background="@xml/dialog_button_bg"
+                app:backgroundTint="@color/orangish_red" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+
+    android:theme="@style/Theme_For_Layouts_with_no_toolbar"
+    android:background="@color/black_gradient_second_color"
+
+>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    android:background="@color/white"
+    android:layout_above="@id/bottom_navigation"
+
+    />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lighter_black"
+        android:elevation="24dp"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        app:bnc_mode="spread">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/home_bottom_nav_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.025"
+            app:bt_shapeColor="@color/light_orange"
+            app:bt_colorActive="@color/white"
+            app:bt_shape="@drawable/bottom_nav_background"
+            app:bt_colorInactive="@color/light_orange"
+            app:bt_icon="@drawable/bottom_nav_home"
+            app:bt_title="Home"
+            android:elevation="10dp"
+            app:bt_active="true"
+            app:bt_showShapeAlways="false"
+            app:bt_titlePadding="10dp" />
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/settings_bottom_nav_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            android:layout_weight="0.020"
+            app:bt_shapeColor="@color/light_orange"
+            app:bt_colorActive="@color/white"
+            app:bt_shape="@drawable/bottom_nav_background"
+            app:bt_colorInactive="@color/light_orange"
+            app:bt_icon="@drawable/bottom_nav_settings"
+            app:bt_title="Setting"
+            app:bt_showShapeAlways="false"
+            app:bt_titlePadding="8dp" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+
+</RelativeLayout>

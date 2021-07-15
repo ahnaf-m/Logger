@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText"
+    app:layout_insetEdge="bottom"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/botoom_view_color"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="Details"
+        android:textColor="@color/grey_sub"
+        android:fontFamily="@font/kanit_light"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/intro_bottom_view"/>
+
+    <View
+        android:layout_centerInParent="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/grey_sub"
+        android:id="@+id/borfer"
+        android:layout_below="@id/intro_bottom_view"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <RelativeLayout
+
+        android:layout_below="@id/borfer"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/usercol"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/bottom_view_header_text"
+        android:text="Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:fontFamily="@font/kanit_regular"
+        android:id="@+id/username_border"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/orangish_red"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:fontFamily="@font/kanit_regular"
+            android:text="kjfgjggjjfjd"
+
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxLength="8"
+
+
+
+            android:layout_below="@+id/username_border"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copy_username"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button"
+
+            android:text="Copy"
+
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/usercol"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:id="@+id/passc"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/bottom_view_header_text"
+            android:text="Passward"
+          android:fontFamily="@font/kanit_regular"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/pass_border"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/orangish_red"
+            android:text="kjfgjggjsdadsdadadadsadsdjfjd"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxLength="13"
+
+            android:layout_below="@id/pass_border"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copy_pass"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+
+            android:background="@drawable/button"
+            android:text="Copy"
+            />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/passc">
+
+
+
+</RelativeLayout>
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

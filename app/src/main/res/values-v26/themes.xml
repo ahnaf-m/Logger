@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+
+
+
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/light_orange</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="boxBackgroundColor">@color/black_gradient_second_color</item>
+        <item name="android:textColorHint">@color/light_orange</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:colorError">@color/yellow_orange_gradient_second_color</item>
+        <item name="errorTextColor">@color/yellow_orange_gradient_second_color</item>
+        <item name="boxStrokeErrorColor">@color/yellow_orange_gradient_second_color</item>
+        <item name="errorIconTint">@color/yellow_orange_gradient_second_color</item>
+    </style>
+</resources>

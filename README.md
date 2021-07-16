@@ -13,10 +13,10 @@
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/59041996/125823802-16e37e51-33ff-453f-b98b-27508560cab6.png" align="right" />
+ <img src="https://user-images.githubusercontent.com/59041996/125951336-0142cc37-040b-40c7-86bf-7edceaa60299.jpg" /> 
 
+<img src="https://user-images.githubusercontent.com/59041996/125952482-eb0bc023-3a08-49ce-8fff-ef9bb4123791.png" /> 
 
-![screenshot](https://user-images.githubusercontent.com/59041996/125823802-16e37e51-33ff-453f-b98b-27508560cab6.png) 
 
 
 

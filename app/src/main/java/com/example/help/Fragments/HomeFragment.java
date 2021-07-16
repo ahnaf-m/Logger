@@ -123,12 +123,14 @@ public class HomeFragment extends Fragment {
                     Log.d(TAG, "Adapter is not Empty");
                     binding.recyclerView.setVisibility(View.VISIBLE);
                     binding.nothingHere.setVisibility(View.GONE);
+                    binding.nothingHereText.setVisibility(View.GONE);
 
                 } else { // List is empty
                     Log.d(TAG, "Adapter is  Empty");
 
                     binding.recyclerView.setVisibility(View.INVISIBLE);
                     binding.nothingHere.setVisibility(View.VISIBLE);
+                    binding.nothingHereText.setVisibility(View.VISIBLE);
 
                 }
             }

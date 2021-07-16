@@ -68,6 +68,14 @@
     <string name="TextWatcher_pass_dont_match">Passwords Do not Match</string>
 
 
+    <string name="share_lint_text"><u>Click here to share link</u></string>
+
+    <string name="checkongithub"><a href="https://github.com/i-am-beginnner34/Logger">Checkout the project on Github</a></string>
+
+
+
+
+
     <string name="no_Internet_Detection">No Internet Connection Detected</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

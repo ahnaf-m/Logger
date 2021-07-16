@@ -3,9 +3,11 @@ package com.example.help.Fragments;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -45,6 +47,9 @@ public class SettingsFragment extends Fragment {
 
         CardView profile = view.findViewById(R.id.profile_card_view);
         CardView about = view.findViewById(R.id.about_the_app);
+        CardView share=view.findViewById(R.id.share_the_app);
+
+        binding.checkProjectOnGithub.setMovementMethod(LinkMovementMethod.getInstance());
 
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,11 +63,18 @@ public class SettingsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent info_Activity = new Intent(getActivity(), com.example.help.Activities.info_Activity.class);
+
                 startActivity(info_Activity);
             }
         });
 
-
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent info_Activity = new Intent(getActivity(), com.example.help.Activities.ShareAppActivity.class);
+                startActivity(info_Activity);
+            }
+        });
         return view;
 
 

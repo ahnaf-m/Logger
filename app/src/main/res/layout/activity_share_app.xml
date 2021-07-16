@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ShareAppActivity"
+    android:background="@color/menu_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/share_icoonnnn"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_share_24"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan the QR Code below"
+            android:textColor="@color/bottom_view_header_text"
+            android:layout_below="@+id/share_icoonnnn"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/kanit_regular"
+            android:id="@+id/qr_header"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_sharing_qr_code"
+            android:layout_below="@+id/qr_header"
+            android:layout_centerInParent="true"
+            android:id="@+id/qr_image"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textColor="@color/bottom_view_header_text"
+            android:layout_below="@+id/qr_image"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/kanit_regular"
+            android:id="@+id/or_text_h"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share_lint_text"
+            android:textColor="@color/light_orange"
+            android:layout_below="@+id/or_text_h"
+            android:layout_centerInParent="true"
+            android:onClick="btn_pressed"
+            android:id="@+id/link_share_text_View"
+            android:fontFamily="@font/kanit_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

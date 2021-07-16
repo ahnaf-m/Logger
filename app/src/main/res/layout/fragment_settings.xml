@@ -101,20 +101,73 @@
 
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_below="@id/about_the_app"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="60dp"
+            android:id="@+id/share_the_app"
+            app:cardBackgroundColor="@color/black_gradient_second_color" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/share_icn"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share The App"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/share_icn"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="All Rights Received @Ahnaf"
             android:textColor="@color/bottom_view_header_text"
-            android:layout_below="@+id/about_the_app"
+            android:layout_below="@+id/share_the_app"
             android:layout_centerInParent="true"
             android:layout_margin="10dp"
             android:id="@+id/copyr"
             android:fontFamily="@font/kanit_regular"
-
             android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkongithub"
+            android:textColor="@color/bottom_view_header_text"
+            android:layout_below="@+id/copyr"
+            android:layout_centerInParent="true"
+            android:id="@+id/check_project_on_github"
+            android:fontFamily="@font/kanit_regular"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
 </RelativeLayout>
 
 

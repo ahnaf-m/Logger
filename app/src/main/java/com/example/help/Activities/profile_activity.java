@@ -39,6 +39,7 @@ public class profile_activity extends AppCompatActivity {
 
 
         setTitle("Profile");
+
         String userEmail="";
         String  full_user_ID="";
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();

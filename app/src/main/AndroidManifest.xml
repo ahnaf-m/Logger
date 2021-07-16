@@ -13,8 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Help">
-        <activity android:name=".Activities.StartingActivity"
-          android:theme="@style/Welcome_Screen_Theme">
+        <activity android:name=".Activities.ShareAppActivity"/>
+        <activity
+            android:name=".Activities.StartingActivity"
+            android:theme="@style/Welcome_Screen_Theme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,8 +24,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.info_Activity" />
-        <activity android:name=".Activities.profile_activity"
-            android:excludeFromRecents="true"/>
+        <activity
+            android:name=".Activities.profile_activity"
+            android:excludeFromRecents="true" />
         <activity
             android:name=".Activities.SignUpActivity"
             android:theme="@style/Theme_For_Layouts_with_no_toolbar"
@@ -42,9 +45,7 @@
         <activity
             android:name=".Activities.LoginActivity"
             android:theme="@style/Theme_For_Layouts_with_no_toolbar"
-            android:windowSoftInputMode="stateVisible|adjustResize">
-
-        </activity>
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -25,6 +25,7 @@
     <color name="disabled_button_text_color">#cccccc</color>
     <color name="bottom_view_header_text">#CFD0D2</color>
     <color name="menu_bg">#313131</color>
+    <color name="link_blue">#0000ff</color>
 
 
 </resources>
